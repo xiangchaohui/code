@@ -1,0 +1,29 @@
+Pip国内源
+pip install django -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+pip install djangorestframework -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+pip install markdown -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+pip install django-filter -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+
+
+
+Linux
+查看目录下的文件
+hadoop fs -ls hdfs://getui-bi-storage/data/dept/bi/ods/disk_douyin_videos_items
+
+查看目录下文件大小
+hadoop fs -du -h hdfs://getui-bi-storage/data/dept/bi/ods/disk_douyin_videos_items/
+
+删除文件或者文件夹
+hadoop fs -rm -r /user/xiangch/douyin/food_video_0 
+
+获取文件到本地
+hdfs dfs -get /user/xiangch/douyin/lda_list_20190107_0.6_0.03_7
+
+压缩本地文件。将stopwords文件夹压缩成temp.tar.gz
+tar -zvcf temp.tar.gz stopwords/
+
+
+
+
+
+

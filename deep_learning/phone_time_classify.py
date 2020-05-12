@@ -93,12 +93,13 @@ model.fit(x_train, y_train, batch_size=32, epochs=20,
 
 ####
 
-# dic_name = {0: '时间', 1: '身份', 2: '号码', 3: '数字'}
-#
-# x = str(input())
-# xx = np.zeros(19)
-# for i, s in enumerate(x):
-#     xx[i] = dic[s]
-# y = model.predict(xx.reshape(1, -1))[0]
-# ind = np.argmax(y)
-# print(dic_name[ind])
+dic_name = {0: '时间', 1: '身份', 2: '号码', 3: '数字'}
+
+x = str(input())
+x=  '15757127314'
+xx = np.zeros(19)
+for i, s in enumerate(x):
+    xx[i] = dic[s]
+y = model.predict(xx.reshape(1, -1))[0]
+ind = np.argmax(y)
+print(dic_name[ind])
